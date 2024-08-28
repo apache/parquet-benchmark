@@ -20,8 +20,9 @@ Use `parquet-dump-footer --help` for explantion of all the options.
 
 ## alternate parquet-dump-footer binary
 
-You can binaries in this repo for different architectures. The binaries are built
-using the following cmake configuration.
+You can find binaries in this repo for different architectures in
+`bin/parquet-dump-footer.zip`. The binaries are built using the following cmake
+configuration.
 
 ```sh
 cmake .. -DCMAKE_BUILD_TYPE=Release -DARROW_ACERO=OFF -DARROW_BUILD_UTILITIES=OFF -DARROW_COMPUTE=OFF -DARROW_CSV=OFF -DARROW_DATASET=OFF -DARROW_FILESYSTEM=ON -DARROW_AZURE=ON -DARROW_HDFS=OFF -DARROW_GCS=ON -DARROW_IPC=OFF -DARROW_PARQUET=ON -DARROW_S3=ON -DARROW_JSON=OFF -DARROW_MIMALLOC=OFF -DARROW_JEMALLOC=OFF -DARROW_SUBSTRAIT=OFF -DARROW_DEPENDENCY_SOURCE=BUNDLED -DARROW_DEPENDENCY_USE_SHARED=OFF -DARROW_BUILD_STATIC=ON -DARROW_BUILD_SHARED=OFF -DPARQUET_BUILD_EXECUTABLES=ON
